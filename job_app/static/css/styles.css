@@ -1,0 +1,122 @@
+/* 🌤 Base Layout and Typography */
+body {
+  background-color: #e6f0ff; /* Soft, light blue background */
+  color: #1e2a38;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  line-height: 1.6;
+}
+
+/* 🧭 Headings */
+h1, h2, h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+/* 🔗 Links */
+a {
+  color: #1c7ed6;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #1864ab;
+  text-decoration: underline;
+}
+
+/* 📦 Section Container */
+section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
+}
+
+/* 🎨 FORM: Wrapper and Layout */
+form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.08);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #003366;
+}
+
+/* 🧱 Form Structure */
+form div {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #1e2a38;
+}
+
+/* 🖋️ Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem 0.75rem;
+  background-color: #f4f8ff;
+  border: 1px solid #b0c4de;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #1e2a38;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1c7ed6;
+  box-shadow: 0 0 0 3px rgba(28, 126, 214, 0.15);
+}
+
+/* 🚀 Submit Button */
+button[type="submit"] {
+  background-color: #1c7ed6;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1864ab;
+  transform: scale(1.03);
+}
+
+/* 📜 Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #4c6780;
+}

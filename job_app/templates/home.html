@@ -1,0 +1,39 @@
+<!-- home.html -->
+{% extends "base.html" %}
+
+{% block title %}Job Application Portal{% endblock %}
+
+{% block body %}
+  <section>
+    <h1>Welcome to the Job Portal</h1>
+    <p>share your details</p>
+  </section>
+ <form method="post">
+  {% csrf_token %}
+  <fieldset>
+    <legend>Candidate Details</legend>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter full name" required />
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter age" min="18" required />
+    </div>
+    <div>
+      <label for="phone_number">Phone Number:</label>
+      <input type="tel" id="phone_number" name="phone_number" placeholder="+91..." required />
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+    </div>
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+{% endblock %}
+{% block scripts %}
+  <script>
+    console.log("Job Application homepage initialized.");
+  </script>
+{% endblock %}
